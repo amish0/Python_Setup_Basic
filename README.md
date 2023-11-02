@@ -6,6 +6,7 @@ This is basic tutorial for python package preparation, It covers following point
 - Create build file
 - Install package of build .whl file via pip
 - Install package using python setup.py
+----------------------------------------
 
 # Refrences:
 - https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/
