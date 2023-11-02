@@ -1,0 +1,24 @@
+name: Download New Release
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v4
+
+    - name: Download New Release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        RELEASE_TAG=$(echo $GITHUB_REF | awk -F / '{print $3}')
+        echo "Downloading release $RELEASE_TAG..."
+        curl -L -o release.zip https://github.com/${{ github.repository }}/archive/${RELEASE_TAG}.zip
+        unzip release.zip
+        rm release.zip
