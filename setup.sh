@@ -4,7 +4,7 @@
 repo_url="https://github.com/amish0/Python_Setup_Basic.git"
 
 # Set the directory where your local repository is located
-local_dir="/user/amish/Python_Setup_Basic"
+local_dir="/user/amish"
 
 # Fetch the latest information about the remote repository
 git fetch
