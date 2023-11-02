@@ -1,5 +1,11 @@
 # Python Workflow
-This is basic tutorial for python setup creation
+This is basic tutorial for python package preparation, It covers following points:
+- Basic directory structure
+- Package module
+- Setup file preparation
+- Create build file
+- Install package of build .whl file via pip
+- Install package using python setup.py
 
 # Refrences:
 - https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/
